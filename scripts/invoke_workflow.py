@@ -223,41 +223,6 @@ class FaaSrPayloadAdapter(FaaSrPayload):
             self.log_file = f"{self['FunctionInvoke']}.txt"
 
 
-class MockFaaSrPayload:
-    """
-    Minimal mock implementation of FaaSrPayload for migration purposes.
-    This provides the essential interface needed by the Scheduler class.
-    """
-    
-    def __init__(self, workflow_data):
-        """Initialize with workflow data."""
-        self._data = workflow_data
-        self.url = "mock://local-workflow"
-        self.overwritten = {}
-        
-        # Set up log file name
-        if self.get("FunctionRank"):
-            self.log_file = f"{self['FunctionInvoke']}({self['FunctionRank']}).txt"
-        else:
-            self.log_file = f"{self['FunctionInvoke']}.txt"
-    
-    def __getitem__(self, key):
-        """Get item from workflow data."""
-        return self._data[key]
-    
-    def __setitem__(self, key, value):
-        """Set item in workflow data."""
-        self._data[key] = value
-        self.overwritten[key] = value
-    
-    def __contains__(self, key):
-        """Check if key exists in workflow data."""
-        return key in self._data
-    
-    def get(self, key, default=None):
-        """Get item with default value."""
-        return self._data.get(key, default)
-
 
 def parse_arguments():
     """Parse command line arguments."""
