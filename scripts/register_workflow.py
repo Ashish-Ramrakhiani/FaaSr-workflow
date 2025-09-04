@@ -14,6 +14,7 @@ import requests
 import time
 import logging
 from collections import defaultdict
+import re
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -487,9 +488,12 @@ def deploy_to_aws(workflow_data):
             # Create prefixed function name using workflow_name-action_name format
             prefixed_func_name = f"{json_prefix}-{action_name}"
             
-            # Get container image, with fallback to default Lambda image
-            container_image = workflow_data.get('ActionContainers', {}).get(action_name, '145342739029.dkr.ecr.us-east-1.amazonaws.com/aws-lambda-tidyverse:latest')
-            
+            # Get container image for AWS Lambda (must be an Amazon ECR image URI)
+            container_image = workflow_data.get('ActionContainers', {}).get(action_name)
+            if not container_image:
+                container_image = '145342739029.dkr.ecr.us-east-1.amazonaws.com/aws-lambda-tidyverse:latest'
+                print(f"No container specified for action '{action_name}', using default: {container_image}")
+ 
             # Check payload size before deployment
             payload_size = len(secret_payload.encode('utf-8'))
             if payload_size > 4000:  # Lambda env var limit is ~4KB

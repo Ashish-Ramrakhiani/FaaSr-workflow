@@ -97,7 +97,6 @@ class WorkflowMigrationAdapter:
     def _create_github_hosted_workflow(self):
         """
         Create a temporary GitHub-hosted workflow file and return its URL.
-        This mimics the GitHub-hosted approach expected by FaaSrPayload.
         
         Returns:
             str: The GitHub raw URL for the workflow file
@@ -127,8 +126,6 @@ class WorkflowMigrationAdapter:
     def _create_faasr_payload_from_local_file(self):
         """
         Create a FaaSrPayload instance from the local workflow file.
-        This is a migration approach that adapts the local file to work with 
-        the GitHub-based FaaSrPayload system.
         
         Returns:
             FaaSrPayload: Configured payload instance
@@ -152,12 +149,11 @@ class WorkflowMigrationAdapter:
         except Exception as e:
             print(f"Error creating FaaSrPayload: {e}")
             # Fallback: create a simple mock payload
-            return MockFaaSrPayload(processed_workflow)
+            return FaaSrPayload(processed_workflow)
     
     def trigger_workflow(self):
         """
         Trigger the workflow using the Scheduler class.
-        This is the main migration method that replaces the old invocation logic.
         """
         # Get the function to invoke
         function_invoke = self.workflow_data.get('FunctionInvoke')
