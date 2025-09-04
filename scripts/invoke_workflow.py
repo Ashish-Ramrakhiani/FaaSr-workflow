@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-Migration Adapter: Replaces the current invocation logic in invoke_workflow.py 
-with the Scheduler class from the FaaSr-Backend.
-
-This migration provides a cleaner, more maintainable approach to triggering 
-workflow functions by leveraging the existing Scheduler infrastructure.
-"""
-
 import argparse
 import json
 import os
