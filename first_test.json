@@ -63,7 +63,7 @@
         "cpuhog_forkjoin_00000010": {
             "FunctionName": "synthetic_faas_function",
             "FaaSServer": "My_GitHub_Account",
-            "Type": "R",
+            "Type": "Python",
             "Arguments": {
                 "execution_time": 99.82,
                 "folder": "synthetic_files",
