@@ -391,8 +391,10 @@ jobs:
     runs-on: ubuntu-latest
     container: {container_image}
     env:
-      TOKEN: ${{{{ secrets.PAT }}}}
-      SECRET_PAYLOAD: ${{{{ secrets.SECRET_PAYLOAD }}}}
+      TOKEN: ${{{{ secrets.GH_PAT }}}}
+      GH_PAT: ${{{{ secrets.GH_PAT }}}}
+      My_Minio_Bucket_ACCESS_KEY: ${{{{ secrets.My_Minio_Bucket_ACCESS_KEY }}}}
+      My_Minio_Bucket_SECRET_KEY: ${{{{ secrets.My_Minio_Bucket_SECRET_KEY }}}}
       OVERWRITTEN: ${{{{ github.event.inputs.OVERWRITTEN }}}}
       PAYLOAD_URL: ${{{{ github.event.inputs.PAYLOAD_URL }}}}
     steps:
