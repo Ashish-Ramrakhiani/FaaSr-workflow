@@ -47,7 +47,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "R",
             "Arguments": {
-                "execution_time": 107.353,
+                "execution_time": 20.1,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -65,7 +65,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "Python",
             "Arguments": {
-                "execution_time": 99.82,
+                "execution_time": 45,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -81,7 +81,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "R",
             "Arguments": {
-                "execution_time": 102.889,
+                "execution_time": 70,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -99,7 +99,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "Python",
             "Arguments": {
-                "execution_time": 103.57,
+                "execution_time": 90,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -135,7 +135,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "Python",
             "Arguments": {
-                "execution_time": 103.207,
+                "execution_time": 0,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -153,7 +153,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "R",
             "Arguments": {
-                "execution_time": 102.513,
+                "execution_time": 5,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
@@ -189,7 +189,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "R",
             "Arguments": {
-                "execution_time": 103.114,
+                "execution_time": 110,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
