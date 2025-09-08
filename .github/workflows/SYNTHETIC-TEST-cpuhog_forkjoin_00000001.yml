@@ -1,4 +1,4 @@
-name: '          !SYNTHETIC-TEST-cpuhog_forkjoin_00000001'
+name: '!SYNTHETIC-TEST-cpuhog_forkjoin_00000001'
 
 on:
   workflow_dispatch:
