@@ -1,4 +1,4 @@
-name: '! register FaaSr workflow with prefix'
+name: '! FAASR REGISTER'
 
 on:
   workflow_dispatch:
