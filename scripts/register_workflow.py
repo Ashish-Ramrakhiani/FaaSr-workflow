@@ -393,8 +393,8 @@ jobs:
     env:
       TOKEN: ${{{{ secrets.My_GitHub_Account_PAT }}}}
       My_GitHub_Account_PAT: ${{{{ secrets.My_GitHub_Account_PAT }}}}
-      My_Minio_Bucket_ACCESS_KEY: ${{{{ secrets.My_Minio_Bucket_ACCESS_KEY }}}}
-      My_Minio_Bucket_SECRET_KEY: ${{{{ secrets.My_Minio_Bucket_SECRET_KEY }}}}
+      My_Minio_Bucket_AccessKey: ${{{{ secrets.My_Minio_Bucket_ACCESS_KEY }}}}
+      My_Minio_Bucket_SecretKey: ${{{{ secrets.My_Minio_Bucket_SECRET_KEY }}}}
       OVERWRITTEN: ${{{{ github.event.inputs.OVERWRITTEN }}}}
       PAYLOAD_URL: ${{{{ github.event.inputs.PAYLOAD_URL }}}}
     steps:
@@ -403,7 +403,7 @@ jobs:
         cd /action
         python3 faasr_entry.py
 """
-            
+
             # Create or update the workflow file
             workflow_path = f".github/workflows/{prefixed_action_name}.yml"
             try:
