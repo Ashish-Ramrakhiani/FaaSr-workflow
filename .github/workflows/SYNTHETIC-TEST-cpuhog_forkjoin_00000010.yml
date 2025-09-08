@@ -12,7 +12,7 @@ on:
 jobs:
   run_docker_image:
     runs-on: ubuntu-latest
-    container: ghcr.io/faasr/github-actions:dev
+    container: ghcr.io/faasr/github-actions-python:dev
     env:
       TOKEN: ${{ secrets.My_GitHub_Account_PAT }}
       My_GitHub_Account_PAT: ${{ secrets.My_GitHub_Account_PAT }}
