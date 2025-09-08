@@ -1,4 +1,4 @@
-name: &project1-add_operation
+name: '&project1-add_operation'
 
 on:
   workflow_dispatch:
