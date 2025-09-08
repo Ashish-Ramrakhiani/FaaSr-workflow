@@ -391,8 +391,8 @@ jobs:
     runs-on: ubuntu-latest
     container: {container_image}
     env:
-      TOKEN: ${{{{ secrets.GH_PAT }}}}
-      GH_PAT: ${{{{ secrets.GH_PAT }}}}
+      TOKEN: ${{{{ secrets.My_GitHub_Account_PAT }}}}
+      My_GitHub_Account_PAT: ${{{{ secrets.My_GitHub_Account_PAT }}}}
       My_Minio_Bucket_ACCESS_KEY: ${{{{ secrets.My_Minio_Bucket_ACCESS_KEY }}}}
       My_Minio_Bucket_SECRET_KEY: ${{{{ secrets.My_Minio_Bucket_SECRET_KEY }}}}
       OVERWRITTEN: ${{{{ github.event.inputs.OVERWRITTEN }}}}
