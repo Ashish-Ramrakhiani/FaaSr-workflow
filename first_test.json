@@ -217,6 +217,7 @@
     "FunctionGitRepo": {
         "synthetic_faas_function": "nolcut/FaaSr-synthetic"
     },
+    "WorkflowName": "SYNTHETIC-TEST",
     "FunctionInvoke": "cpuhog_forkjoin_00000001",
     "InvocationID": "",
     "FaaSrLog": "FaaSrLog",
