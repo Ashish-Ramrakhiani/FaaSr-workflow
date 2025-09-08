@@ -1,4 +1,4 @@
-name: Invoke FaaSr Workflow Using Scheduler
+name: '  (FAASR INVOKE)'
 
 on:
   workflow_dispatch:
