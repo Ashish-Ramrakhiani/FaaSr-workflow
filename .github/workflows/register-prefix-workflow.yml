@@ -1,4 +1,4 @@
-name: '! FAASR REGISTER'
+name: (FAASR REGISTER)
 
 on:
   workflow_dispatch:
