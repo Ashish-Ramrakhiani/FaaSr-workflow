@@ -1,6 +1,6 @@
 {
     "ComputeServers": {
-        "My_GitHub_Account": {
+        "GH": {
             "FaaSType": "GitHubActions",
             "UserName": "nolcut",
             "ActionRepoName": "FaaSr-workflow",
