@@ -10,7 +10,6 @@
     },
     "DataStores": {
         "My_S3_Bucket": {
-            "Endpoint": "_",
             "Bucket": "faasr",
             "Region": "us-east-1",
             "Writable": "TRUE"
