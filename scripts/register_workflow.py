@@ -393,8 +393,8 @@ jobs:
     env:
       TOKEN: ${{{{ secrets.My_GitHub_Account_PAT }}}}
       My_GitHub_Account_PAT: ${{{{ secrets.My_GitHub_Account_PAT }}}}
-      My_Minio_Bucket_AccessKey: ${{{{ secrets.My_Minio_Bucket_ACCESS_KEY }}}}
-      My_Minio_Bucket_SecretKey: ${{{{ secrets.My_Minio_Bucket_SECRET_KEY }}}}
+      My_S3_Bucket_AccessKey: ${{{{ secrets.My_S3_Bucket_ACCESS_KEY }}}}
+      My_S3_Bucket_SecretKey: ${{{{ secrets.My_S3_Bucket_SECRET_KEY }}}}
       OVERWRITTEN: ${{{{ github.event.inputs.OVERWRITTEN }}}}
       PAYLOAD_URL: ${{{{ github.event.inputs.PAYLOAD_URL }}}}
     steps:
