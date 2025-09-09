@@ -10,7 +10,7 @@
     },
     "DataStores": {
         "My_S3_Bucket": {
-            "Bucket": "faasr",
+            "Bucket": "faasr-test-0001",
             "Region": "us-east-1",
             "Writable": "TRUE"
         }
