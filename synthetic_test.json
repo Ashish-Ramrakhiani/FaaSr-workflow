@@ -46,7 +46,7 @@
             "FaaSServer": "My_GitHub_Account",
             "Type": "R",
             "Arguments": {
-                "execution_time": 15.353,
+                "execution_time": 0.353,
                 "folder": "synthetic_files",
                 "input_files": [
                     "uniform_input_file"
