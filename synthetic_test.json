@@ -204,12 +204,12 @@
         }
     },
     "ActionContainers": {
-        "cpuhog_forkjoin_00000001": "ghcr.io/nolcut/github-actions-r:dev",
-        "cpuhog_forkjoin_00000002": "ghcr.io/nolcut/github-actions-r:dev",
-        "cpuhog_forkjoin_00000010": "ghcr.io/nolcut/github-actions-r:dev",
-        "cpuhog_forkjoin_00000003": "ghcr.io/nolcut/github-actions-r:dev",
-        "cpuhog_forkjoin_00000004": "ghcr.io/nolcut/github-actions-r:dev",
-        "cpuhog_forkjoin_00000005": "ghcr.io/nolcut/github-actions-r:dev",
+        "cpuhog_forkjoin_00000001": "ghcr.io/faasr/github-actions-r:dev",
+        "cpuhog_forkjoin_00000002": "ghcr.io/faasr/github-actions-r:dev",
+        "cpuhog_forkjoin_00000010": "ghcr.io/faasr/github-actions-r:dev",
+        "cpuhog_forkjoin_00000003": "ghcr.io/faasr/github-actions-r:dev",
+        "cpuhog_forkjoin_00000004": "ghcr.io/faasr/github-actions-r:dev",
+        "cpuhog_forkjoin_00000005": "ghcr.io/faasr/github-actions-r:dev",
         "cpuhog_forkjoin_00000006": "ghcr.io/faasr/github-actions-python:dev",
         "cpuhog_forkjoin_00000007": "ghcr.io/faasr/github-actions-python:dev",
         "cpuhog_forkjoin_00000008": "ghcr.io/faasr/github-actions-python:dev",
