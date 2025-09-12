@@ -3,25 +3,10 @@
         "My_GitHub_Account": {
             "FaaSType": "GitHubActions",
             "UserName": "Ashish-Ramrakhiani",
-            "UseSecretStore": false,
-            "ActionRepoName": "FaaSr-py-test-rpc",
-            "Branch": "main",
-            "Token": "My_GitHub_Account_TOKEN"
+            "UseSecretStore": true,
+            "ActionRepoName": "FaaSr-workflow",
+            "Branch": "main"
         },
-        "My_SLURM_Server": {
-      "FaaSType": "SLURM",
-      "Endpoint": "http://slurm.faasr.io:6820",
-      "APIVersion": "v0.0.37",
-      "Partition": "faasr",
-      "Nodes": 1,
-      "Tasks": 1,
-      "CPUsPerTask": 2,
-      "UserName" : "ubuntu",
-      "Memory": 2048,
-      "TimeLimit": 30,
-      "WorkingDirectory": "/tmp",
-    "Token": "My_SLURM_Server_TOKEN"
-    },
         "GCP": {
             "FaaSType": "GoogleCloud",
             "Namespace": "faasr-dev",
@@ -29,18 +14,16 @@
             "Endpoint": "https://run.googleapis.com/v2/projects/",
             "UseSecretStore": true,
             "ClientEmail": "faasr-workflow-runner@faasr-dev.iam.gserviceaccount.com",
-            "SecretKey": "My_GCP_Server_SECRET_KEY",
             "TokenUri": "https://oauth2.googleapis.com/token"
         }
     },
     "DataStores": {
         "My_S3_Bucket": {
-            "Bucket": "faasr-test-0001",
-            "Region": "us-east-1",
-            "Writable": "TRUE",
-            "AccessKey": "My_S3_Bucket_ACCESS_KEY",
-            "SecretKey": "My_S3_Bucket_SECRET_KEY"
-        }
+      "Bucket": "faasr",
+      "Endpoint": "https://play.min.io",
+      "Region": "us-east-1",
+      "Writable": "TRUE"
+    }
     },
     "ActionList": {
         "add-operation": {
@@ -90,7 +73,7 @@
     },
     "ActionContainers": {
         "rfunc": "ramrakha/gcp-r:1.4",
-        "add_operation": "ghcr.io/ashish-ramrakhiani/ga-rpc-python:dev",
+        "add-operation": "ghcr.io/ashish-ramrakhiani/ga-py:1.5",
         "log": "ghcr.io/ashish-ramrakhiani/ga-rpc-python:dev",
         "folders": "ghcr.io/ashish-ramrakhiani/ga-rpc-python:dev"
     },
@@ -119,7 +102,7 @@
     "FaaSrLog": "FaaSrLog",
     "LoggingDataStore": "My_S3_Bucket",
     "DefaultDataStore": "My_S3_Bucket",
-    "InvocationID":"1234",
+    "InvocationID":"",
     "InvocationIDFromDate": "%Y%m%d%H%M",
     "WorkflowName": "test-ts-workflow-7"
 }
