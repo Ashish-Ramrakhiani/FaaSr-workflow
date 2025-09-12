@@ -8,7 +8,7 @@
             "Branch": "main"
         },
         "GCP": {
-            "FaaSType": "GoogleCloud",
+            "FaaSType": "GCP",
             "Namespace": "faasr-dev",
             "Region": "us-central1",
             "Endpoint": "https://run.googleapis.com/v2/projects/",
