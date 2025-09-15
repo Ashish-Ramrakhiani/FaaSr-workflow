@@ -18,7 +18,6 @@ jobs:
       My_GitHub_Account_PAT: ${{ secrets.My_GitHub_Account_PAT }}
       My_S3_Bucket_AccessKey: ${{ secrets.My_S3_Bucket_AccessKey }}
       My_S3_Bucket_SecretKey: ${{ secrets.My_S3_Bucket_SecretKey }}
-      GCP_SecretKey: ${{ secrets.GCP_SecretKey }}
       OVERWRITTEN: ${{ github.event.inputs.OVERWRITTEN }}
       PAYLOAD_URL: ${{ github.event.inputs.PAYLOAD_URL }}
     steps:
