@@ -12,7 +12,7 @@ on:
 jobs:
   run_docker_image:
     runs-on: ubuntu-latest
-    container: ghcr.io/ashish-ramrakhiani/ga-py:1.6
+    container: ghcr.io/ashish-ramrakhiani/ga-py:1.5
     env:
       TOKEN: ${{ secrets.My_GitHub_Account_PAT }}
       My_GitHub_Account_PAT: ${{ secrets.My_GitHub_Account_PAT }}
