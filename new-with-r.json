@@ -72,7 +72,7 @@
         }
     },
     "ActionContainers": {
-        "rfunc": "ramrakha/gcp-r:1.5-debug",
+        "rfunc": "ramrakha/gcp-r:1.5",
         "add-operation": "ghcr.io/ashish-ramrakhiani/ga-py:1.6",
         "log": "ghcr.io/ashish-ramrakhiani/ga-rpc-python:dev",
         "folders": "ghcr.io/ashish-ramrakhiani/ga-rpc-python:dev"
